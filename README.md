@@ -15,3 +15,6 @@ To start play you just use command "make {hame of game}". For example, start "br
 
 ### Asciinema record brain-even:
 [![asciicast](https://asciinema.org/a/aSxYKiMVRuF0ytyc80rBdslUC.svg)](https://asciinema.org/a/aSxYKiMVRuF0ytyc80rBdslUC)
+
+### Asciinema record brain-calc:
+[![asciicast](https://asciinema.org/a/Mm8xQTjnsQGtsTVVlhgN6IXKe.svg)](https://asciinema.org/a/Mm8xQTjnsQGtsTVVlhgN6IXKe)
