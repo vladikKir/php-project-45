@@ -1,5 +1,6 @@
 {
     "name": "hexlet/code",
+    "description": "set of 5 math games",
     "autoload": {
         "psr-4": {
             "Hexlet\\Cod\\": "src/"
@@ -10,5 +11,8 @@
             "name": "vladikKir"
         }
     ],
-    "require": {}
+    "require": {},
+    "bin": [
+        "bin/brain-games"
+      ]
 }
