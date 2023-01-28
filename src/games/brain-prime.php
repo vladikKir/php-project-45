@@ -21,12 +21,12 @@ function makePrime()
         return true;
     }
 
-    $makePrimeRound = function() {
-        $question = random_int(0, 100);
+    $makePrimeRound = function () {
+        $question = random_int(1, 100);
         $correctAnswer = isPrime($question) ? 'yes' : 'no';
-      
+
         return [$question, $correctAnswer];
-      };
+    };
 
     makeGame($rule, $makePrimeRound);
 }

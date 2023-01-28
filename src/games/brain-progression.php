@@ -7,7 +7,7 @@ use function Php\Project\Index\makeGame;
 function makeProgression()
 {
     $rule = 'What number is missing in the progression?';
-    function makeProgression($length, $firstNumber, $step)
+    function buildProgression($length, $firstNumber, $step)
     {
         $progression = [];
 
@@ -22,7 +22,7 @@ function makeProgression()
         $length = random_int(5, 10);
         $firstNumber = random_int(1, 20);
         $step = random_int(1, 10);
-        $progressionArray = makeProgression($length, $firstNumber, $step);
+        $progressionArray = buildProgression($length, $firstNumber, $step);
         $numberHiddenIndex = random_int(0, count($progressionArray) - 1);
 
         $correctAnswer = $progressionArray[$numberHiddenIndex];
