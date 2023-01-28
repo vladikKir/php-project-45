@@ -9,7 +9,7 @@ const ROUND_COUNT = 3;
 
 function makeGame($rule, $makeRound)
 {
-    line("Welcome to the Brain Game!");
+    line("Welcome to the Brain Games!");
     $name = prompt("May I have your name?");
     line("Hello, {$name}!");
     line($rule);
