@@ -4,7 +4,7 @@ namespace Php\Project\Games\Brain\Progression;
 
 use function Php\Project\Index\makeGame;
 
-function buildProgression($length, $firstNumber, $step)
+function buildProgression(int $length, int $firstNumber, int $step)
 {
     $progression = [];
 
@@ -24,7 +24,7 @@ function makeProgression()
         $firstNumber = random_int(1, 20);
         $step = random_int(1, 10);
         $progressionArray = buildProgression($length, $firstNumber, $step);
-        $numberHiddenIndex = random_int(0, count($progressionArray) - 1);
+        $numberHiddenIndex = random_int(1, count($progressionArray) - 1);
 
         $correctAnswer = $progressionArray[$numberHiddenIndex];
 

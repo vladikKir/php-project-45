@@ -10,7 +10,7 @@ function getRandOperator()
     return $operators[random_int(0, 2)];
 }
 
-function calculate($number1, $number2, $operator)
+function calculate(int $number1, int $number2, string $operator)
 {
     switch ($operator) {
         case '+':

@@ -4,7 +4,7 @@ namespace Php\Project\Games\Brain\Gcd;
 
 use function Php\Project\Index\makeGame;
 
-function findGreatestDivider($number1, $number2)
+function findGreatestDivider(int $number1, int $number2)
 {
     $number = min($number1, $number2);
     for ($divider = $number; $divider > 0; $divider -= 1) {

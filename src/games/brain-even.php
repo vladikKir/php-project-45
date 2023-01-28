@@ -4,7 +4,7 @@ namespace Php\Project\Games\Brain\Even;
 
 use function Php\Project\Index\makeGame;
 
-function isEven($num)
+function isEven(int $num)
 {
     return $num % 2 === 0;
 }
