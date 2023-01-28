@@ -25,6 +25,7 @@ function makeProgression()
         $step = random_int(1, 10);
         $progressionArray = buildProgression($length, $firstNumber, $step);
         $maxHiddenIndex = count($progressionArray) - 1;
+        /* @phpstan-ignore-next-line */
         $numberHiddenIndex = random_int(0, $maxHiddenIndex);
 
         $correctAnswer = $progressionArray[$numberHiddenIndex];
