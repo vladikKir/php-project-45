@@ -4,19 +4,20 @@ namespace Php\Project\Games\Brain\Progression;
 
 use function Php\Project\Index\makeGame;
 
+function buildProgression($length, $firstNumber, $step)
+{
+    $progression = [];
+
+    for ($i = 0; $i <= $length; $i += 1) {
+        $nextNumber = $firstNumber + ($step * $i);
+        array_push($progression, $nextNumber);
+    }
+    return $progression;
+}
+
 function makeProgression()
 {
     $rule = 'What number is missing in the progression?';
-    function buildProgression($length, $firstNumber, $step)
-    {
-        $progression = [];
-
-        for ($i = 0; $i <= $length; $i += 1) {
-            $nextNumber = $firstNumber + ($step * $i);
-            array_push($progression, $nextNumber);
-        }
-        return $progression;
-    }
 
     $makeProgressionRound = function () {
         $length = random_int(5, 10);

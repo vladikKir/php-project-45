@@ -4,27 +4,27 @@ namespace Php\Project\Games\Brain\Calc;
 
 use function Php\Project\Index\makeGame;
 
+function getRandOperator()
+{
+    $operators = ['+', '-', '*'];
+    return $operators[random_int(0, 2)];
+}
+
+function calculate($number1, $number2, $operator)
+{
+    switch ($operator) {
+        case '+':
+            return $number1 + $number2;
+        case '-':
+            return $number1 - $number2;
+        case '*':
+            return $number1 * $number2;
+    }
+}
+
 function makeCalc()
 {
     $rule = 'What is the result of the expression?';
-
-    function calculate($number1, $number2, $operator)
-    {
-        switch ($operator) {
-            case '+':
-                return $number1 + $number2;
-            case '-':
-                return $number1 - $number2;
-            case '*':
-                return $number1 * $number2;
-        }
-    }
-
-    function getRandOperator()
-    {
-        $operators = ['+', '-', '*'];
-        return $operators[random_int(0, 2)];
-    }
 
     $makeCalcRound = function () {
         $operator = getRandOperator();
