@@ -24,7 +24,8 @@ function makeProgression()
         $firstNumber = random_int(1, 20);
         $step = random_int(1, 10);
         $progressionArray = buildProgression($length, $firstNumber, $step);
-        $numberHiddenIndex = random_int(1, count($progressionArray) - 1);
+        $maxHiddenIndex = count($progressionArray) - 1;
+        $numberHiddenIndex = random_int(0, $maxHiddenIndex);
 
         $correctAnswer = $progressionArray[$numberHiddenIndex];
 

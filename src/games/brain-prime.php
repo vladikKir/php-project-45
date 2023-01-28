@@ -4,7 +4,7 @@ namespace Php\Project\Games\Brain\Prime;
 
 use function Php\Project\Index\makeGame;
 
-function isPrime($expression)
+function isPrime(int $expression)
 {
     if ($expression < 2 || ($expression % 2 === 0 && $expression !== 2)) {
         return false;
