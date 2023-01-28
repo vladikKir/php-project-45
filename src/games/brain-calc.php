@@ -11,21 +11,22 @@ function makeCalc()
     function calculate($number1, $number2, $operator)
     {
         switch ($operator) {
-          case '+':
-            return $number1 + $number2;
-          case '-':
-            return $number1 - $number2;
-          case '*':
-            return $number1 * $number2;
+            case '+':
+                return $number1 + $number2;
+            case '-':
+                return $number1 - $number2;
+            case '*':
+                return $number1 * $number2;
         }
-    };
+    }
 
-    function getRandOperator() {
+    function getRandOperator()
+    {
         $operators = ['+', '-', '*'];
         return $operators[random_int(0, 2)];
     }
 
-    $makeCalcRound = function() {
+    $makeCalcRound = function () {
         $operator = getRandOperator();
 
         $number1 = random_int(1, 100);

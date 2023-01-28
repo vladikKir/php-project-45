@@ -23,7 +23,7 @@ function makeGame($rule, $makeRound)
         if ($answer === $correctAnswer) {
             line("Correct!");
         } else {
-            line("' {$answer} ' is wrong answer ;(. Correct answer was ' {$correctAnswer} '.");
+            line("'{$answer}' is wrong answer ;(. Correct answer was {$correctAnswer}.");
             line("Let's try again, {$name}!");
             return;
         }
