@@ -20,7 +20,7 @@ function makeGame($rule, $makeRound)
         line("Question: {$question}");
         $answer = prompt("Your answer: ");
 
-        if ($answer === $correctAnswer) {
+        if ((string) $answer === (string) $correctAnswer) {
             line("Correct!");
         } else {
             line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
