@@ -2,11 +2,7 @@
 
 namespace Php\Project\Games\Brain\Calc;
 
-use SimpleKafkaClient\Exception;
-
 use function Php\Project\Engine\launchGame;
-
-const RULE = 'What is the result of the expression?';
 
 function getRandOperator()
 {
@@ -23,13 +19,13 @@ function calculate(int $number1, int $number2, string $operator)
             return $number1 - $number2;
         case '*':
             return $number1 * $number2;
-        default:
-            throw new Exception('Unsupported operator type');
     }
 }
 
 function launchCalc()
 {
+    $rule = 'What is the result of the expression?';
+
     $makeCalcRound = function () {
         $operator = getRandOperator();
 
@@ -42,5 +38,5 @@ function launchCalc()
         return [$question, $correctAnswer];
     };
 
-    launchGame(RULE, $makeCalcRound);
+    launchGame($rule, $makeCalcRound);
 }

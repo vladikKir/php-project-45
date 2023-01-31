@@ -4,8 +4,6 @@ namespace Php\Project\Games\Brain\Gcd;
 
 use function Php\Project\Engine\launchGame;
 
-const RULE = 'Find the greatest common divisor of given numbers.';
-
 function findGreatestDivider(int $number1, int $number2)
 {
     $number = min($number1, $number2);
@@ -19,6 +17,8 @@ function findGreatestDivider(int $number1, int $number2)
 
 function launchGcd()
 {
+    $rule = 'Find the greatest common divisor of given numbers.';
+
     $makeGcdRound = function () {
         $number1 = random_int(1, 100);
         $number2 = random_int(1, 100);
@@ -29,5 +29,5 @@ function launchGcd()
         return [$question, $correctAnswer];
     };
 
-    launchGame(RULE, $makeGcdRound);
+    launchGame($rule, $makeGcdRound);
 }

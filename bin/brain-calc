@@ -9,6 +9,6 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-use function Php\Project\Games\Brain\Calc\makeCalc;
+use function Php\Project\Games\Brain\Calc\launchCalc;
 
-makeCalc();
+launchCalc();

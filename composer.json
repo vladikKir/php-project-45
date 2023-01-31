@@ -3,16 +3,15 @@
     "description": "set of 5 math games",
     "autoload": {
         "psr-4": {
-            "Hexlet\\Cod\\": "src/"
         },
         "files": [
             "src/Cli.php",
-            "src/index.php",
-            "src/games/brain-even.php",
-            "src/games/brain-calc.php",
-            "src/games/brain-gcd.php",
-            "src/games/brain-progression.php",
-            "src/games/brain-prime.php"
+            "src/Engine.php",
+            "src/Games/brain-even.php",
+            "src/Games/brain-calc.php",
+            "src/Games/brain-gcd.php",
+            "src/Games/brain-progression.php",
+            "src/Games/brain-prime.php"
         ]
     },
     "authors": [

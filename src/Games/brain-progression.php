@@ -4,8 +4,6 @@ namespace Php\Project\Games\Brain\Progression;
 
 use function Php\Project\Engine\launchGame;
 
-const RULE = 'What number is missing in the progression?';
-
 function buildProgression(int $length, int $firstNumber, int $step)
 {
     $progression = [];
@@ -19,6 +17,8 @@ function buildProgression(int $length, int $firstNumber, int $step)
 
 function launchProgression()
 {
+    $rule = 'What number is missing in the progression?';
+
     $makeProgressionRound = function () {
         $length = random_int(5, 10);
         $firstNumber = random_int(1, 20);
@@ -36,5 +36,5 @@ function launchProgression()
         return [$question, $correctAnswer];
     };
 
-    launchGame(RULE, $makeProgressionRound);
+    launchGame($rule, $makeProgressionRound);
 }

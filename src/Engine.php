@@ -1,13 +1,13 @@
 <?php
 
-namespace Php\Project\Index;
+namespace Php\Project\Engine;
 
 use function cli\line as line;
 use function cli\prompt;
 
 const ROUND_COUNT = 3;
 
-function makeGame(string $rule, callable $makeRound)
+function launchGame(string $rule, callable $makeRound)
 {
     line("Welcome to the Brain Games!");
     $name = prompt("May I have your name?");

@@ -4,8 +4,6 @@ namespace Php\Project\Games\Brain\Prime;
 
 use function Php\Project\Engine\launchGame;
 
-const RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
 function isPrime(int $expression)
 {
     if ($expression < 2 || ($expression % 2 === 0 && $expression !== 2)) {
@@ -19,8 +17,10 @@ function isPrime(int $expression)
     return true;
 }
 
-function makePrime()
+function launchPrime()
 {
+    $rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
     $makePrimeRound = function () {
         $question = random_int(1, 100);
         $correctAnswer = isPrime($question) ? 'yes' : 'no';
@@ -28,5 +28,5 @@ function makePrime()
         return [$question, $correctAnswer];
     };
 
-    launchGame(RULE, $makePrimeRound);
+    launchGame($rule, $makePrimeRound);
 }
