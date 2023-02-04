@@ -1,8 +1,8 @@
 <?php
 
-namespace Php\Project\Games\Brain\Calc;
+namespace Brain\Games\Calc;
 
-use function Php\Project\Engine\launchGame;
+use function Brain\Engine\launchGame;
 
 const RULE = 'What is the result of the expression?';
 

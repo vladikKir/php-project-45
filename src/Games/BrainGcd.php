@@ -1,8 +1,8 @@
 <?php
 
-namespace Php\Project\Games\Brain\Gcd;
+namespace Brain\Games\Gcd;
 
-use function Php\Project\Engine\launchGame;
+use function Brain\Engine\launchGame;
 
 function findGreatestDivider(int $number1, int $number2)
 {

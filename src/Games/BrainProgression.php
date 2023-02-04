@@ -1,8 +1,8 @@
 <?php
 
-namespace Php\Project\Games\Brain\Progression;
+namespace Brain\Games\Progression;
 
-use function Php\Project\Engine\launchGame;
+use function Brain\Engine\launchGame;
 
 function buildProgression(int $length, int $firstNumber, int $step)
 {

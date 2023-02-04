@@ -1,8 +1,8 @@
 <?php
 
-namespace Php\Project\Games\Brain\Prime;
+namespace Brain\Games\Prime;
 
-use function Php\Project\Engine\launchGame;
+use function Brain\Engine\launchGame;
 
 function isPrime(int $expression)
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Php\Project\Games\Brain\Even;
+namespace Brain\Games\Even;
 
-use function Php\Project\Engine\launchGame;
+use function Brain\Engine\launchGame;
 
 function isEven(int $num)
 {
