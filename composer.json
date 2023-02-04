@@ -2,16 +2,14 @@
     "name": "hexlet/code",
     "description": "set of 5 math games",
     "autoload": {
-        "psr-4": {
-        },
         "files": [
             "src/Cli.php",
             "src/Engine.php",
-            "src/Games/brain-even.php",
-            "src/Games/brain-calc.php",
-            "src/Games/brain-gcd.php",
-            "src/Games/brain-progression.php",
-            "src/Games/brain-prime.php"
+            "src/Games/BrainEven.php",
+            "src/Games/BrainCalc.php",
+            "src/Games/BrainGcd.php",
+            "src/Games/BrainProgression.php",
+            "src/Games/BrainPrime.php"
         ]
     },
     "authors": [

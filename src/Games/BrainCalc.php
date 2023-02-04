@@ -4,10 +4,12 @@ namespace Php\Project\Games\Brain\Calc;
 
 use function Php\Project\Engine\launchGame;
 
+const RULE = 'What is the result of the expression?';
+
 function getRandOperator()
 {
     $operators = ['+', '-', '*'];
-    return $operators[random_int(0, 2)];
+    return $operators[array_rand($operators)];
 }
 
 function calculate(int $number1, int $number2, string $operator)
